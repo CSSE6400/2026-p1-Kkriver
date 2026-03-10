@@ -2,15 +2,7 @@ from flask import Blueprint, jsonify, request
 
 api = Blueprint("api", __name__, url_prefix="/api/v1")
 
-TODOS = [
-    {
-        "id": 1,
-        "title": "Sample todo",
-        "description": "This is a sample todo",
-        "completed": False,
-        "deadline_at": None,
-    }
-]
+TODOS = []
 
 ALLOWED_FIELDS = {"title", "description", "completed", "deadline_at"}
 
