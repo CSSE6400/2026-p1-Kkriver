@@ -15,20 +15,29 @@ This week focuses on building a basic Flask application with a health check endp
 
 ## How to Run
 
-### 1. Install dependencies
+## Setup
+
+Install project dependencies:
 
 ```bash
 poetry install --no-root
+```
 
-## 2. Run the application
+## Run
+
+Start the Flask application:
 
 ```bash
 poetry run flask --app todo run -p 6400 --debug
+```
 
-## 3. Test the API
+## Test
+
+Test the API health endpoint:
 
 ```bash
 curl http://127.0.0.1:6400/api/v1/health
+```
 
 ## API
 
