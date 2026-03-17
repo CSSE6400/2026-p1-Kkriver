@@ -1,13 +1,39 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=22944450)
-# CSSE6400 Week 1 Practical
+# Week 1 - Basic Flask API
 
-Construction of a simple HTTP server in Python.
+## Overview
 
-Please see the [instructions](https://csse6400.uqcloud.net/practicals/week01.pdf) for more details.
+This week focuses on building a basic Flask application with a health check endpoint.
 
-Update this README file with appropriate information about your project,
-including how to run it.
+---
 
-There are [resources](https://www.makeareadme.com) available to help you write a good README file.
+## Features
+
+- Flask application setup  
+- Health check endpoint  
+
+---
+
+## How to Run
+
+### 1. Install dependencies
+
+```bash
+poetry install --no-root
+
+## 2. Run the application
+
+```bash
+poetry run flask --app todo run -p 6400 --debug
+
+## 3. Test the API
+
+```bash
+curl http://127.0.0.1:6400/api/v1/health
+
+## API
+
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| GET | /api/v1/health | Health check |
 
 
